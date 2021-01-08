@@ -1,7 +1,7 @@
 gitpod:
   # This field must be set to your domain name. Leaving it set to its default value will result in
   # a non-functional installation.
-  hostname: your-domain.com
+  hostname: code.jacobhq.xyz
 
   # If you have a static IP that your domain resolves to, set it here.
   # Leaving this field set to its default value is fine. Kubernetes will assign you an IP address
@@ -18,19 +18,10 @@ gitpod:
     protocol: "https"
     type: "GitHub"
     oauth:
-      clientId: "your-client-ID-here"
-      clientSecret: "your-client-secret-here"
-      callBackUrl: "https://your-domain.com/auth/github/callback"
+      clientId: "82e2604bda6cc8ef9e66"
+      clientSecret: "716e7853e8e0498e8a0270bc6f455f28f7c3ea8b"
+      callBackUrl: "https://code.jacobhq.xyz/auth/github/callback"
       settingsUrl: "https://github.com/settings/connections/applications/your-client-ID-here"
-  - id: "Example Gitlab"
-    host: "gitlab.com"
-    protocol: "https"
-    type: "GitLab"
-    oauth:
-      clientId: "your-application-ID-here"
-      clientSecret: "your-secret-here"
-      callBackUrl: "https://your-domain.com/auth/gitlab/callback"
-      settingsUrl: "gitlab.com/profile/applications"
 
   # RBAC is enabled by default. If your cluster does not use RBAC, set this flag to false so that
   # we do not attempt to install PodSecurityPolicies and the likes.
